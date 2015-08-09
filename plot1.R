@@ -1,3 +1,4 @@
+##I completed this assignment for last month's course but I'm retaking it so my files were all posted a month ago
 ##read in table
 powerData <- read.table("./household.txt", sep = ";", header = TRUE, na.strings = "?", stringsAsFactors = FALSE)
 
