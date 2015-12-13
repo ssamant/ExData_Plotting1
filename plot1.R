@@ -1,11 +1,11 @@
-##I completed this assignment for last month's course but I'm retaking it so my files were all posted a month ago
+##PLEASE NOTE: I completed this assignment for the course a few months ago but I'm retaking it so the upload dates for my files are all old
 ##read in table
 powerData <- read.table("./household.txt", sep = ";", header = TRUE, na.strings = "?", stringsAsFactors = FALSE)
 
 ##subset for required dates 01 Feb 2007 -- 02 Feb 2007
 power2007 <- powerData[powerData$Date=="1/2/2007" | powerData$Date=="2/2/2007",]
 
-####create date+time column
+##create date+time column
 power2007$DateTime <- as.POSIXct(paste(power2007$Date, power2007$Time), format = "%d/%m/%Y %H:%M:%S")
 
 
